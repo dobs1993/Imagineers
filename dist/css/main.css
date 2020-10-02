@@ -1401,6 +1401,7 @@ header .container .navbar #navmenu .nav #port:hover {
 /* Footer Media */
 
 @media (max-width:600px){
-    .container-map {
-    flex-direction: column;
+    #cta-partnerships .partnership-grid img {
+    opacity: 1;
+   }
 }
