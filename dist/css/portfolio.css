@@ -1,6 +1,7 @@
 body {
     background: #f4f4f4;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Utilities */
@@ -234,9 +235,7 @@ a {
     display: flex;
     margin-right: 4rem;
 }
-ul.nav{
-    
-}
+
 ul.nav > li{}
 ul.nav > li > a{
     color: rgb(255, 255, 255);
@@ -251,7 +250,6 @@ ul.nav > li > a{
     text-transform: uppercase;
     font-weight: 600;
     line-height: 20px;
-    margin-left: 7rem;
     z-index: 1;
     transition: all 2s ease-in-out;
 }

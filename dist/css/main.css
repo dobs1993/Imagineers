@@ -607,73 +607,13 @@ ul.nav > li > a.active{
 /* ==========================================================================
    About Section
    ========================================================================== */
-/* .about-section{}
-.about-content{}
-.cv-btn,
-.skill-items,
-.about-content{
-    padding-left: 30px;
-}
-.about-bg{}
-.about-bg img{
-    width: 100%;
-    border-radius: 5px;
-}
-.skill-items{
-    margin: 30px 0;
-}
-.skill-item{
-    overflow: hidden;
-    margin: 0 0 20px 0;
-}
-.skill-item h5{
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-}
-.skill-item .progress{
-    height: 5px;
-    background-color: #ddd;
-    box-shadow: none;
-    margin-bottom: 0;
-    overflow: visible;
-}
-.skill-item .progress .progress-bar{
-    line-height: 5px;
-    background-color: #029ffa;
-    position: relative;
-    border-radius: 3px;
-}
-.skill-item .progress .progress-bar span{
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    color: #666;
-    font-size: 10px;
-    font-weight: 600;
-}
-.skill-item .progress .progress-bar span::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    left: calc(50% - 4px);
-    bottom: -4px;
-}
-.cv-btn a i{
-    margin-right: 10px;
-} */
 
 #about .about-content p {
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 1.2rem;
-color: black;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 1.4rem;
+color: rgb(0, 0, 0);
 margin-top: 1.75rem;
-padding-bottom: 0.8rem;
+padding-bottom: 1rem;
 }
 
 #about .about-content .border-btm {
@@ -1395,6 +1335,10 @@ header .container .navbar #navmenu .nav #port {
 
 header .container .navbar #navmenu .nav #port:hover {
     background: rgb(44, 44, 253);
+}
+
+#navmenu .nav a {
+    margin-top: 0.4rem;
 }
 
 

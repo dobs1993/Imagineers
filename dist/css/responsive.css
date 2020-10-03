@@ -55,13 +55,6 @@
     .navbar-brand{
         padding: 11px 0;
     }
-    .menu-btn,
-    .menu-wrap ul.nav{
-        display: none;
-    }
-    .slicknav_menu {
-        display:block;
-    }
     .hero-section{
         height: 400px;
     }
@@ -84,6 +77,18 @@
     #scroll-to-top {
         bottom: 15px;
         right: 20px;
+    }
+}
+
+/* Added to stop overflow of nav menu - Made the slick menu show up earlier */
+
+@media all and (max-width:1000px){
+    .slicknav_menu {
+        display:block;
+    }
+    .menu-btn,
+    .menu-wrap ul.nav{
+        display: none;
     }
 }
 /* ---- End of max-width 767px CSS ---- */
