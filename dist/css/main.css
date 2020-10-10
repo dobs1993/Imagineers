@@ -1095,6 +1095,9 @@ iframe {
   #header .container .navbar .logo-contain h3{
     font-size: 1rem;
 }
+.hero-content {
+    padding-top: 1.2rem;
+}
 }
 .social-icons
 {

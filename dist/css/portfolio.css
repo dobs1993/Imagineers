@@ -125,17 +125,41 @@ a {
     color: #ffffff;
     border-radius: 5px;
     padding: 0.7rem;
-    position: absolute;
-    top: 5px;
-    left: 10px;
     background: rgb(0, 183, 255);
     transition: all 1.2s ease-in-out
 }
 
 .navbar #navmenu .nav .nav-link:hover {
-    background: rgb(29, 75, 226);
-    color: white;
+    background: #3366cc;
 }
+
+.navbar #navmenu .nav a{
+font-size: 2rem;
+color: #ffffff;
+border-radius: 5px;
+padding: 0.7rem;
+background: rgb(0, 183, 255);
+transition: all 1s ease-in;
+}
+
+.navbar #navmenu .nav a:hover{
+background: #3366cc;
+}
+
+.navbar #navmenu .nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+}
+
+#navmenu .nav .phone i {
+  margin-right: 0.5rem;
+}
+
+/* List to choose a page */
 
 #filter-list{
 	display: inline-block;
@@ -174,7 +198,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     text-align: center;
-    padding-top: 3.8rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -327,6 +351,12 @@ Footer Section
   {
     margin-bottom:30px
   }
+  .navbar #navmenu .nav .nav-link {
+    font-size: 1rem;
+}
+  .navbar #navmenu .nav a{
+  font-size: 1rem;
+}
 }
 @media (max-width:767px)
 {
