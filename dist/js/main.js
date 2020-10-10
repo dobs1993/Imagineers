@@ -184,5 +184,3 @@
 });
 
 })(jQuery);
-
-window.addEventListener('load', AOS.refresh);
