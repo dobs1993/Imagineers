@@ -36,34 +36,7 @@
         label: '',
         allowParentLinks: true
     });          
-
-/*=========================================================================
-    Testimonial Carousel
-=========================================================================*/
-	$('#testimonial-carousel').owlCarousel({
-        loop: true,
-        margin: 25,
-        autoplay: true,
-        smartSpeed: 800,
-        nav: true,
-        navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>'],
-        dots: false,
-        responsive : {
-            0 : {
-                items: 1
-            },
-            480 : {
-                items: 1,
-            },
-            768 : {
-                items: 1,
-            },
-            992 : {
-                items: 1,
-            }
-        }
-    });   
-             
+    
 /*=========================================================================
     Portfolio
 =========================================================================*/
@@ -211,3 +184,5 @@
 });
 
 })(jQuery);
+
+window.addEventListener('load', AOS.refresh);
