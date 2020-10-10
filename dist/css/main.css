@@ -571,6 +571,7 @@ ul.nav > li > a.active{
 .hero-content{}
 .hero-content h1{
     margin-bottom: 20px;
+    font-size: 4rem;
 }
 .hero-content span{
     position: relative;
@@ -608,10 +609,6 @@ ul.nav > li > a.active{
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
-
-/* .main-hover {
-    margin-left: 3.45rem;
-} */
 
 .hero-content .main-hover:hover {
     background: rgba(15, 98, 223, 0.788);
@@ -682,7 +679,13 @@ padding-bottom: 1rem;
 .service-item p {
     font-size: 1.2rem;
     font-weight: bold;
+    color: rgb(20, 20, 20);
 }
+
+/* #services .container .service-wrap-row {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+} */
 
 /* ==========================================================================
    4.0 Work Section
