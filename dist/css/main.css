@@ -337,7 +337,7 @@ button{
 /*Section Heading*/
 .section-heading{}
 .section-heading h2{
-    padding: 14px 10px;
+    padding: 18px 10px;
     background: linear-gradient(to left, #fff0 -10%,#029ffa; 100%);
     display: inline-block;
     text-transform: uppercase;
@@ -675,20 +675,7 @@ text-shadow: 2px 2px 1px black;
     transition: all 0.2s ease-in-out;
     z-index: 1;
 }
-.service-item:hover{
-    cursor: pointer;
-    transform: scale(1.07);
-    -moz-box-shadow: 0 2px 5px rgba(16,16,16,.20);
-    -webkit-box-shadow: 0 2px 5px rgba(16,16,16,.20);
-    box-shadow: 0 2px 5px rgba(16,16,16,.20);
-}
 
-
-
-.service-item:hover > 
-.service-item:hover h3{
-    color: #fff;
-}
 .service-item h3 span{
     padding: 5px 5px;
     font-family: 'BigNoodleTitling',serif;
@@ -699,19 +686,19 @@ text-shadow: 2px 2px 1px black;
     color: white;
     font-family: 
 }
-.service-item:hover h3 span{
-    background: linear-gradient(to left, #029ffa; 0%, #029ffa; 100%);   
-}
+
 .service-item i{
     font-size: 40px;
     color: #029ffa;
     margin-bottom: 25px;
 }
 
-.service-item p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
+.service-item:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+    -moz-box-shadow: 0 2px 5px rgba(16,16,16,.20);
+    -webkit-box-shadow: 0 2px 5px rgba(16,16,16,.20);
+    box-shadow: 0 2px 5px rgba(16,16,16,.20);
 }
 
 /* Aligning the service boxes */
@@ -731,39 +718,7 @@ color: #fff;
 
 /* Pictures inside services section boxes */
 
-.picture-background-1 {
-    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/EXTERIORSIGNAGE/IMG_0658.JPG) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-2 {
-    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/INTERIORSIGNAGE/ABSOC\ Letters\ &\ Plaques.jpg) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-3 {
-    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/photoservices/Photoshop_services.JPG) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-4 {
-    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/LARGEFORMATPRINTING/IMG_3480.jpg) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-5 {
-    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/WAYFINDSIGNAGE/GC\ 3.JPG) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-6 {
-    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/3MFLOORGRAPHICS/mitch\ 5.jpg) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-7 {
-    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/web-design.png) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-8 {
-    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/MISC/IMG_4831.JPG) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-
+@media(min-width:900px){
 /* Hovering to get color and vanish icon */
 
 .picture-background-1:hover{
@@ -842,6 +797,40 @@ color: #fff;
 
 .picture-background-8:hover > i, .picture-background-8:hover > h3 {
     display: none;
+}
+}
+
+.picture-background-1 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/EXTERIORSIGNAGE/IMG_0658.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-2 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/INTERIORSIGNAGE/ABSOC\ Letters\ &\ Plaques.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-3 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/photoservices/Photoshop_services.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-4 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/LARGEFORMATPRINTING/IMG_3480.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-5 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/WAYFINDSIGNAGE/GC\ 3.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-6 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/3MFLOORGRAPHICS/mitch\ 5.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-7 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/web-design.png) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-8 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/MISC/IMG_4831.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
 }
 
 
@@ -1562,12 +1551,4 @@ header .container .navbar #navmenu .nav #port:hover {
     .hero-content span{
     font-size: 3.6rem;
     }
-    .service-item:hover{
-    cursor: pointer;
-    transform: scale(1);
-    /* -moz-box-shadow: 0 2px 5px rgba(16,16,16,.20);
-    -webkit-box-shadow: 0 2px 5px rgba(16,16,16,.20);
-    box-shadow: 0 2px 5px rgba(16,16,16,.20); */
-}
-
 }
