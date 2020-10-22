@@ -950,11 +950,8 @@ color: #fff;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     border-radius: 2px;
-}
-
-.work-filter .LFP:before {
-    top: 60px;
 } 
+
 .work-filter li.active:before,
 .work-filter li:hover:before, .work-filter li:focus:before, .work-filter li:active:before{
     -webkit-transform: scaleX(1);
@@ -965,6 +962,12 @@ color: #fff;
 }
 .work-filter li:hover, .work-filter li:focus, .work-filter li:active{
     cursor: pointer;
+}
+
+@media (max-width: 366px){
+    .work-filter .LFP:before {
+    top: 53px;
+}
 }
 
 /* ==========================================================================
@@ -1156,7 +1159,7 @@ form input[type="submit"]:focus {
 /* ==========================================================================
    Widget Section
    ========================================================================== */
-.widget-section{
+/* .widget-section{
     background-color: #111;
     padding: 100px 0;
     position: relative;
@@ -1191,7 +1194,7 @@ form input[type="submit"]:focus {
 }
 .widget-content a:hover{
     color: #029ffa;
-}
+} */
 /* ==========================================================================
 Footer Section
 ========================================================================== */
@@ -1552,6 +1555,12 @@ header .container .navbar #navmenu .nav #port:hover {
         background-position: bottom;
     } 
     .hero-content span{
-    font-size: 3.6rem;
+    font-size: 3.4rem;
+    }
+}
+
+@media (max-width:280px){
+    .hero-content span{
+    font-size: 2.4rem;
     }
 }
