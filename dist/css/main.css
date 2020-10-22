@@ -1562,5 +1562,12 @@ header .container .navbar #navmenu .nav #port:hover {
     .hero-content span{
     font-size: 3.6rem;
     }
+    .service-item:hover{
+    cursor: pointer;
+    transform: scale(1);
+    /* -moz-box-shadow: 0 2px 5px rgba(16,16,16,.20);
+    -webkit-box-shadow: 0 2px 5px rgba(16,16,16,.20);
+    box-shadow: 0 2px 5px rgba(16,16,16,.20); */
+}
 
 }
