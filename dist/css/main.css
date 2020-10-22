@@ -21,7 +21,47 @@
     Xavia Personal Portfolio 0.1
     ========================================================================== */
 
-	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto&display=swap');
+    
+
+    /* Fonts */
+
+    /* Impact */
+
+@font-face {
+    font-family: 'Maximum Impact';
+    src: url(../fonts/MaximumImpact.woff) format('woff2'),
+        url(../fonts/MaximumImpact.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Big Noodle */
+
+@font-face {
+    font-family: 'BigNoodleTitling';
+    src: url(../fonts/BigNoodleTitling.woff) format('woff2'),
+        url(../fonts/BigNoodleTitling.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Trajan Pro Bold */
+
+@font-face {
+    font-family: 'Trajanus Roman';
+    src: url(../fonts/TrajanusRoman.woff) format('woff2'),
+        url(../fonts/TrajanusRoman.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
 	
 /*  ==========================================================================
     Common Styles
@@ -32,7 +72,7 @@
 }
 body{
     background-color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'BigNoodleTitling', sans-serif;
     font-size: 16px;
     line-height: 26px;
     color: #555;
@@ -54,11 +94,12 @@ h1{
 }
 h2{
     font-size: 36px;
-    color: #222;
+    color: #fff;
     margin: 0 0 10px;
     font-weight: 600;
     line-height: 36px;
     letter-spacing: -0.5px;
+    font-family: 'Maximum Impact'
 }
 h3,h4{
     margin: 0 0 10px;
@@ -308,7 +349,7 @@ button{
     background-color: #029ffa;
     text-transform: uppercase;
     color: #fff;
-    font-size: 12px;
+    font-size: 18px;
     border-radius: 2px;
     line-height: 45px;
     font-weight: 600;
@@ -328,7 +369,8 @@ button{
     display: inline-block;
     text-transform: uppercase;
     font-size: 2.7rem;
-    font-family: 'Arvo', serif;
+    font-family: 'Trajanus Roman', sans-serif;
+    text-shadow: 2px 2px 2px black;
 }
 
 .section-heading{}
@@ -339,7 +381,8 @@ button{
     display: inline-block;
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-family: 'Arvo', serif;
+    font-family: 'Maximum Impact';
+    color: #fff;
 }
 
 .section-heading h4:hover {
@@ -479,6 +522,11 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     margin-right: 0.4rem;
 }
 
+#header .container .navbar .logo-contain img {
+    width: 400px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 ul.nav > li{}
 ul.nav > li > a{
     color: #ddd;
@@ -523,7 +571,7 @@ ul.nav > li > a.active{
 }
 .slicknav_btn{
     background-color: transparent;
-    margin: 17px 5px 19px;
+    margin: 7px 5px 9px;
 }
 .slicknav_nav .slicknav_row:hover,
 .slicknav_nav .slicknav_row, 
@@ -572,10 +620,14 @@ ul.nav > li > a.active{
 .hero-content h1{
     margin-bottom: 20px;
     font-size: 4rem;
+    font-family: 'BigNoodleTitling',serif;
+    letter-spacing: 0.8rem;
 }
 .hero-content span{
     position: relative;
     z-index: 1;
+    font-size: 7rem;
+    line-height: 6rem;
 }
 .hero-content span:before{
     content: '';
@@ -590,24 +642,9 @@ ul.nav > li > a.active{
 .hero-content p{
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 18px;
     color: #ffffff;
     margin-bottom: 20px;
-}
-
-.hero-content h1 {
-    transform: translateX(-100rem);
-    animation: flyin 3s ease-in-out forwards 1.5s;
-}
-
-.hero-content p,
-.hero-content .main-hover {
-    transform: translateX(-100rem);
-    animation: appear;
-    opacity: 0;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
 }
 
 .hero-content .main-hover:hover {
@@ -617,16 +654,27 @@ ul.nav > li > a.active{
    About Section
    ========================================================================== */
 
+#about {
+    background: linear-gradient(rgba(15, 98, 223, 0.788),rgba(0,0,0,0.7)), url(../img/INTERIORSIGNAGE/IMG_4366.JPG) no-repeat center center/cover;
+}
+
 #about .about-content p {
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-size: 1.4rem;
-color: rgb(0, 0, 0);
+color: mistyrose;
 margin-top: 1.75rem;
 padding-bottom: 1rem;
+width: 80%;
+text-shadow: 2px 2px 1px black;
 }
 
 #about .about-content .border-btm {
-    border-bottom: 2px dotted #333;
+    border-bottom: 2px dotted rgb(255, 255, 255);
+}
+
+#about .about-content h2 {
+    letter-spacing: 0.2rem;
+    font-family: 'BigNoodleTitling',serif;
 }
 
 
@@ -634,9 +682,13 @@ padding-bottom: 1rem;
 /* ==========================================================================
    Service Section
    ========================================================================== */
+
+#services {
+    background: linear-gradient(rgb(23, 23, 175),rgba(0,0,0,0.7)), url(../img/INTERIORSIGNAGE/IMG_2932.jpg) no-repeat center center/cover;
+}
+
 .service-section1{}
 .service-item{
-    background-color: #fff;
     border: 2px solid #d1d1d1;
     padding: 40px 20px;
     height: 100%;
@@ -653,19 +705,28 @@ padding-bottom: 1rem;
 }
 .service-item:hover{
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.07);
     -moz-box-shadow: 0 2px 5px rgba(16,16,16,.20);
     -webkit-box-shadow: 0 2px 5px rgba(16,16,16,.20);
     box-shadow: 0 2px 5px rgba(16,16,16,.20);
 }
+
+
+
+.service-item:hover > 
 .service-item:hover h3{
     color: #fff;
 }
 .service-item h3 span{
-    padding: 5px 10px;
-    background: linear-gradient(to left, #fff0 -10%, #029ffa 100%);
+    padding: 5px 5px;
+    /* background: linear-gradient(to left, #fff0 -10%, #029ffa 100%); */
+    font-family: 'BigNoodleTitling',serif;
+    text-shadow: 2px 2px 1px black;
+    letter-spacing: 0.9px;
     display: inline-block;
     margin-bottom: 1.25rem;
+    color: white;
+    font-family: 
 }
 .service-item:hover h3 span{
     background: linear-gradient(to left, #029ffa; 0%, #029ffa; 100%);   
@@ -679,17 +740,148 @@ padding-bottom: 1rem;
 .service-item p {
     font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(20, 20, 20);
+    color: white;
 }
 
-/* #services .container .service-wrap-row {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-} */
+/* Aligning the service boxes */
+
+#services .container .service-wrap .picture-background{
+    display: flex;
+    flex-direction: column;
+}
+
+#services .container .service-wrap .picture-background h3 {
+margin-top: 3.5rem;
+}
+
+#services .container .service-wrap .picture-background i {
+color: #fff;
+}
+
+/* Pictures inside services section boxes */
+
+.picture-background-1 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/EXTERIORSIGNAGE/IMG_0658.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-2 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/INTERIORSIGNAGE/ABSOC\ Letters\ &\ Plaques.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-3 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/photoservices/Photoshop_services.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-4 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/LARGEFORMATPRINTING/IMG_3480.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-5 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/WAYFINDSIGNAGE/GC\ 3.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-6 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/3MFLOORGRAPHICS/mitch\ 5.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-7 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/web-design.png) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-8 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/MISC/IMG_4831.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+
+/* Hovering to get color and vanish icon */
+
+.picture-background-1:hover{
+    background: url(../img/EXTERIORSIGNAGE/IMG_0658.JPG) no-repeat center center/cover;
+}
+
+.picture-background-1:hover > i, .picture-background-1:hover > h3 {
+    display: none;
+}
+
+/* Picture 2 */
+
+.picture-background-2:hover{
+    background: url(../img/INTERIORSIGNAGE/ABSOC\ Letters\ &\ Plaques.jpg) no-repeat center center/cover;
+}
+
+.picture-background-2:hover > i, .picture-background-2:hover > h3 {
+    display: none;
+}
+
+/* Picture 3 */
+
+.picture-background-3:hover{
+    background: url(../img/photoservices/Photoshop_services.JPG) no-repeat center center/cover;
+}
+
+.picture-background-3:hover > i, .picture-background-3:hover > h3 {
+    display: none;
+}
+
+/* Picture 4 */
+
+.picture-background-4:hover{
+    background: url(../img/LARGEFORMATPRINTING/IMG_3480.jpg) no-repeat center center/cover;
+}
+
+.picture-background-4:hover > i, .picture-background-4:hover > h3 {
+    display: none;
+}
+
+/* Picture 5 */
+
+.picture-background-5:hover{
+    background: url(../img/WAYFINDSIGNAGE/GC\ 3.JPG) no-repeat center center/cover;
+}
+
+.picture-background-5:hover > i, .picture-background-5:hover > h3 {
+    display: none;
+}
+
+/* Picture 6 */
+
+.picture-background-6:hover{
+    background: url(../img/3MFLOORGRAPHICS/mitch\ 5.jpg) no-repeat center center/cover;
+}
+
+.picture-background-6:hover > i, .picture-background-6:hover > h3 {
+    display: none;
+}
+
+/* Picture 7 */
+
+.picture-background-7:hover{
+    background: url(../img/web-design.png) no-repeat center center/cover;
+}
+
+.picture-background-7:hover > i, .picture-background-7:hover > h3 {
+    display: none;
+}
+
+/* Picture 8 */
+
+.picture-background-8:hover{
+    background: url(../img/MISc/IMG_4831.JPG) no-repeat center center/cover;
+}
+
+.picture-background-8:hover > i, .picture-background-8:hover > h3 {
+    display: none;
+}
+
 
 /* ==========================================================================
    4.0 Work Section
    ========================================================================== */
+
+#portfolio {
+    background: linear-gradient(rgba(0,0,0,0.7),rgb(23, 23, 175)), url(../img/INTERIORSIGNAGE/IMG_3250.JPG) no-repeat center center/cover;
+}
+
 .work-section{}
 .work-items .col-md-4{
     padding: 10px;
@@ -704,6 +896,7 @@ padding-bottom: 1rem;
 }
 .work-box img{
     width: 100%;
+    box-shadow: 5px 5px 2px black;
 }
 .work-thumb{
     transition: all 0.3s ease-in-out;
@@ -763,12 +956,17 @@ padding-bottom: 1rem;
 .work-filter li{
     display: inline-block;
     position: relative;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 25px;
     text-transform: uppercase;
-    color: rgb(49,49,49);
+    color: rgb(255, 255, 255);
     font-size: 1.75rem;
     font-weight: 600;
+    text-shadow: 2px 2px 1px black;
+    letter-spacing: 5px;
+}
+.work-filter .LFP {
+    line-height:1.7rem;
 }
 .work-filter li a{
     display: inline-block;
@@ -800,6 +998,7 @@ padding-bottom: 1rem;
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    z-index: 2;
 }
 .work-filter li:hover, .work-filter li:focus, .work-filter li:active{
     cursor: pointer;
@@ -833,6 +1032,77 @@ padding-bottom: 1rem;
     opacity: 1;
    }
 
+   /* Companies */
+#companies {
+}
+
+#companies .companies-banner {
+background: linear-gradient(rgba(6, 59, 138, 0.7),rgba(0,0,0,0.7)), url(../img/EXTERIORSIGNAGE/IMG_3172.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top;
+  padding-top: 40rem;
+}
+
+/* #companies img {
+    width: 100%;
+} */
+
+/* Contact New Section */
+
+#contact-new {
+    background: linear-gradient(rgb(20, 20, 20), rgba(230, 229, 229, 0.884));
+    height: 22rem;
+    padding: 17rem 0rem;
+}
+
+#contact-new img {
+width: 400px;
+margin-left: 2rem;
+}
+
+#contact-new .contact-new-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+#contact-new ul li {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+#contact-new ul li i {
+    margin-right: 0.5rem;
+}
+
+#contact-new ul li:nth-child(3) {
+    padding-bottom: 3rem;
+    border-bottom: 5px solid black;
+}
+
+#contact-new a {
+    color: rgb(23, 23, 175);
+}
+
+#contact-new a:hover {
+    color: #029ffa;
+}
+
+@media (max-width: 800px){
+    #contact-new .contact-new-container {
+    flex-direction: column;
+}
+#contact-new .contact-new-container img {
+    width: 200px;
+}
+
+}
 
 /* ==========================================================================
    Contact Section
@@ -1024,6 +1294,9 @@ iframe {
   margin-top:5px;
   letter-spacing:2px
 }
+.site-footer ul {
+    font-family: 'Maximum Impact',serif;
+}
 .site-footer a
 {
   color:#737373;
@@ -1073,6 +1346,8 @@ iframe {
 {
   margin:0;
   color: white;
+  font-family: 'BigNoodleTitling',serif;
+  font-size: 1.2rem;
 }
 
 .copyright-text a {
@@ -1083,6 +1358,9 @@ iframe {
   .site-footer [class^=col-]
   {
     margin-bottom:30px
+  }
+  .contact-new-container i:last-child {
+      padding-bottom: 0.8rem;
   }
 }
 @media (max-width:767px)
@@ -1249,7 +1527,7 @@ Scroll To Top
 	padding: 2em;
 }
 
-.form-appointment {
+/* .form-appointment {
 	padding: 2em;
 	background-color: rgb(145, 144, 154);
 	border-radius: 4px;
@@ -1323,31 +1601,8 @@ Scroll To Top
 span.wpcf7-list-item {
 	display: block;
 	margin-left: -.02em;
-}
+} */
 
-
-
-/* Animations */
-
-@keyframes flyin {
-    80% {
-        transform: translateX(3rem);
-    }
-    100% {
-        transform: translateX(0)
-    }
-}
-
-@keyframes appear {
-    80% {
-        transform: translateX(0);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
 header .container .navbar #navmenu .nav #port {
     background: linear-gradient(to right, #fff0, #029ffa);
@@ -1366,6 +1621,11 @@ header .container .navbar #navmenu .nav #port:hover {
     margin-top: 0.4rem;
 }
 
+#navmenu .nav .nav-link {
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Trajanus Roman', sans-serif;
+}
+
 
 /* Footer Media */
 
@@ -1373,4 +1633,70 @@ header .container .navbar #navmenu .nav #port:hover {
     #cta-partnerships .partnership-grid img {
     opacity: 1;
    }
+}
+
+
+
+/* HERO SECTION 5 COLUMNS */
+
+
+.hero-section-5 .hero-section-5---contain {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+} 
+
+.hero-section-5 .hero-section-5---contain .image-column {
+    height: 100vh;
+    border: 5px solid black;
+} 
+
+.hero-section-5 .hero-section-5---contain .image-1 {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgb(23, 23, 175,0.9)), url(../img/mitch.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+} 
+
+.hero-section-5 .hero-section-5---contain .image-2 {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgb(23, 23, 175,0.9)), url(../img/mitch\ 2.jpg) no-repeat center center/cover;
+} 
+
+.hero-section-5 .hero-section-5---contain .image-3 {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgb(23, 23, 175,0.9)), url(../img/mitch\ 3.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.hero-section-5 .hero-section-5---contain .image-4 {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgb(23, 23, 175,0.9)), url(../img/mitch\ 4.jpg) no-repeat center center/cover;
+} 
+
+.hero-section-5 .hero-section-5---contain .image-5 {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgb(23, 23, 175,0.9)), url(../img/MISC/Cenotaph\ 1.jpg) no-repeat center center/cover;
+} 
+
+@media (max-width:900px){
+    .hero-section-5 .hero-section-5---contain {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-section-5 .hero-section-5---contain .image-column {
+        height: 40vh;
+    }
+    .hero-section-5 .hero-section-5---contain .image-2 {
+        background-position: 40% 60%;
+    } 
+     .hero-section-5 .hero-section-5---contain .image-3 {
+        background-position: 40% 45%;
+    } 
+    .hero-section-5 .hero-section-5---contain .image-4 {
+        background-position: 40% 20%;
+    } 
+    .hero-section-5 .hero-section-5---contain .image-5 {
+        background-position: bottom;
+    } 
+    .hero-content span{
+    font-size: 4rem;
+    }
+
 }

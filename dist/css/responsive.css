@@ -82,7 +82,7 @@
 
 /* Added to stop overflow of nav menu - Made the slick menu show up earlier */
 
-@media all and (max-width:1000px){
+@media all and (max-width:1200px){
     .slicknav_menu {
         display:block;
     }
