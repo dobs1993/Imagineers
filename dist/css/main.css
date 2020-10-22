@@ -951,6 +951,10 @@ color: #fff;
     transition-timing-function: ease-out;
     border-radius: 2px;
 }
+
+.work-filter .LFP:before {
+    top: 60px;
+} 
 .work-filter li.active:before,
 .work-filter li:hover:before, .work-filter li:focus:before, .work-filter li:active:before{
     -webkit-transform: scaleX(1);
