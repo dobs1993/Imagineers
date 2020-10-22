@@ -718,8 +718,41 @@ color: #fff;
 
 /* Pictures inside services section boxes */
 
-@media(min-width:900px){
-/* Hovering to get color and vanish icon */
+.picture-background-1 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/EXTERIORSIGNAGE/IMG_0658.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-2 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/INTERIORSIGNAGE/ABSOC\ Letters\ &\ Plaques.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-3 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/photoservices/Photoshop_services.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-4 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/LARGEFORMATPRINTING/IMG_3480.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-5 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/WAYFINDSIGNAGE/GC\ 3.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-6 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/3MFLOORGRAPHICS/mitch\ 5.jpg) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-7 {
+    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/web-design.png) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+.picture-background-8 {
+    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/MISC/IMG_4831.JPG) no-repeat center center/cover;
+    transition: all 1s ease-in-out;
+}
+
+@media(min-width:700px){
+/* Hovering to get color and vanish icon - Needs to be set for bigger than mobile or else it breaks page */
 
 .picture-background-1:hover{
     background: url(../img/EXTERIORSIGNAGE/IMG_0658.JPG) no-repeat center center/cover;
@@ -798,39 +831,6 @@ color: #fff;
 .picture-background-8:hover > i, .picture-background-8:hover > h3 {
     display: none;
 }
-}
-
-.picture-background-1 {
-    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/EXTERIORSIGNAGE/IMG_0658.JPG) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-2 {
-    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/INTERIORSIGNAGE/ABSOC\ Letters\ &\ Plaques.jpg) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-3 {
-    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/photoservices/Photoshop_services.JPG) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-4 {
-    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/LARGEFORMATPRINTING/IMG_3480.jpg) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-5 {
-    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/WAYFINDSIGNAGE/GC\ 3.JPG) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-6 {
-    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/3MFLOORGRAPHICS/mitch\ 5.jpg) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-7 {
-    background: linear-gradient( rgba(29, 148, 245, 0.7), rgba(110, 110, 110, 0.7)), url(../img/web-design.png) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
-}
-.picture-background-8 {
-    background: linear-gradient(rgba(110, 110, 110, 0.7),rgba(29, 148, 245, 0.7)), url(../img/MISC/IMG_4831.JPG) no-repeat center center/cover;
-    transition: all 1s ease-in-out;
 }
 
 
@@ -935,7 +935,7 @@ color: #fff;
     content: "";
     position: absolute;
     z-index: -1;
-    top: 25px;
+    top: 30px;
     left: 0;
     width: 100%;
     height: 8px;
