@@ -1,28 +1,4 @@
-/* Xavia By TeamXcel */
-
-/*  ==========================================================================
-    Table of Contets
-    ==========================================================================
-    
-    1.0 Common Styles
-    2.0 Header Section
-    3.0 Hero Section
-    4.0 About Section
-    5.0 Services Section
-    6.0 Counter Section
-    7.0 Portfolio Section
-    8.0 Review Section
-    9.0 Contact Section
-    10.0 Widget Section
-    11.0 Footer Section
-    12.0 Scrool To Top
-    
-    ==========================================================================
-    Xavia Personal Portfolio 0.1
-    ========================================================================== */
-
-    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto&display=swap');
-    
+    /* 2POINT2 Media - https://www.2point2media.com */
 
     /* Fonts */
 
@@ -58,9 +34,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-
-
 
 	
 /*  ==========================================================================
@@ -364,7 +337,7 @@ button{
 /*Section Heading*/
 .section-heading{}
 .section-heading h2{
-    padding: 5px 10px;
+    padding: 14px 10px;
     background: linear-gradient(to left, #fff0 -10%,#029ffa; 100%);
     display: inline-block;
     text-transform: uppercase;
@@ -474,7 +447,6 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 }
 
-}
 .navbar-header {
     padding: 17px 0;
 }
@@ -719,7 +691,6 @@ text-shadow: 2px 2px 1px black;
 }
 .service-item h3 span{
     padding: 5px 5px;
-    /* background: linear-gradient(to left, #fff0 -10%, #029ffa 100%); */
     font-family: 'BigNoodleTitling',serif;
     text-shadow: 2px 2px 1px black;
     letter-spacing: 0.9px;
@@ -1032,7 +1003,7 @@ color: #fff;
     opacity: 1;
    }
 
-   /* Companies */
+/* Companies */
 #companies {
 }
 
@@ -1045,10 +1016,6 @@ background: linear-gradient(rgba(6, 59, 138, 0.7),rgba(0,0,0,0.7)), url(../img/E
   background-position: top;
   padding-top: 40rem;
 }
-
-/* #companies img {
-    width: 100%;
-} */
 
 /* Contact New Section */
 
@@ -1104,33 +1071,6 @@ margin-left: 2rem;
 
 }
 
-/* ==========================================================================
-   Contact Section
-   ========================================================================== */
-
-/* #contact {
-    border-bottom: 5px solid #525151;
-}
-
-.contact-form .form-control{
-    border: 1px solid #ddd;
-    border-radius: 0;
-    height: 45px;
-    background-color: transparent;
-}
-.contact-form .form-control.message{
-    height: 150px;
-}
-#form-messages{
-    display: none;
-}
-#form-messages.alert-danger,
-#form-messages.alert-success{
-    display: block;
-}
-.contact-form .default-btn:hover{
-    cursor: pointer;
-} */
 
 *:focus {
   outline: 0;
@@ -1527,82 +1467,6 @@ Scroll To Top
 	padding: 2em;
 }
 
-/* .form-appointment {
-	padding: 2em;
-	background-color: rgb(145, 144, 154);
-	border-radius: 4px;
-	border: 2px solid rgb(0, 0, 0);
-	box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
-	font-family: 'PT Sans', Arial, sans-serif;
-	margin: 20px auto;
-    font-weight: bold;
-}
-
-.form-appointment input[type=text],
-.form-appointment input[type=email],
-.form-appointment input[type=tel],
-.form-appointment textarea {	
-	border: 1px solid rgb(20, 20, 20);
-	border-radius: .2em;	
-	font-family: 'PT Sans', Arial, sans-serif;
-	font-size: 1.1em;
-	padding: .4em 1em;
-	margin: 0 0 .8em;
-	width: 100%;
-  box-shadow: 0 0 8px rgba(0,0,0,.08) inset;
-}
-
-.form-appointment input[type=text],
-.form-appointment input[type=email],
-.form-appointment input[type=tel],
-.form-appointment input[type=submit],
-.form-appointment textarea {	
-	-webkit-transition: all .2s ease-in-out;
-	   -moz-transition: all .2s ease-in-out;
-	        transition: all .2s ease-in-out;
-}
-
-.form-appointment input[type=text]:active,
-.form-appointment input[type=text]:focus,
-.form-appointment input[type=email]:active,
-.form-appointment input[type=email]:focus,
-.form-appointment input[type=tel]:active,
-.form-appointment input[type=tel]:focus,
-.form-appointment textarea:active,
-.form-appointment textarea:focus {	
-  outline: 0;
-  box-shadow: 0 0 6px rgb(31, 31, 219);
-}
-
-.form-appointment textarea {
-	height: 160px;
-}
-
-.form-appointment input[type=submit] {
-	background-color: rgb(0, 0, 0);
-	border: 1px solid rgb(134, 189, 134);
-	border-radius: 4px;
-	color: rgb(255, 255, 255);
-	cursor: pointer;
-	font-family: inherit;
-	font-size: 1.4em;
-	padding: 10px 18px;
-}
-
-.form-appointment input[type=submit]:hover {
-	background-color: white;
-	color: rgb(40, 40, 181);
-}
-
-.form-appointment .wpcf7-list-item-label {
-	color: rgb(79, 78, 95);
-}
-
-span.wpcf7-list-item {
-	display: block;
-	margin-left: -.02em;
-} */
-
 
 header .container .navbar #navmenu .nav #port {
     background: linear-gradient(to right, #fff0, #029ffa);
@@ -1696,7 +1560,7 @@ header .container .navbar #navmenu .nav #port:hover {
         background-position: bottom;
     } 
     .hero-content span{
-    font-size: 4rem;
+    font-size: 3.6rem;
     }
 
 }
