@@ -1318,6 +1318,10 @@ iframe {
     font-size: 0.7rem;
     margin-bottom: -4rem;
 }
+
+body {
+    overflow-x: hidden;
+}
 }
 .social-icons
 {
