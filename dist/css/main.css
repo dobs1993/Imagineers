@@ -1063,6 +1063,9 @@ margin-left: 2rem;
 #contact-new .contact-new-container img {
     width: 200px;
 }
+#companies .companies-banner {
+display: none;
+}
 
 }
 
