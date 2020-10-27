@@ -2,12 +2,14 @@
 
     /* Fonts */
 
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
     /* Impact */
 
 @font-face {
     font-family: 'Maximum Impact';
-    src: url(../fonts/MaximumImpact.woff) format('woff2'),
-        url(../fonts/MaximumImpact.woff) format('woff');
+    src: url(./fonts/MaximumImpact.woff) format('woff2'),
+        url(./fonts/MaximumImpact.woff) format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -15,25 +17,46 @@
 
 /* Big Noodle */
 
-@font-face {
+/* @font-face {
     font-family: 'BigNoodleTitling';
-    src: url(../fonts/BigNoodleTitling.woff) format('woff2'),
+    src: url(../fonts/BigNoodleTitling.woff2) format('woff2'),
         url(../fonts/BigNoodleTitling.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
+
+/* @font-face {
+    font-family: 'bignoodletitlingregular';
+    src: url('./fonts/BigNoodleTitling.woff2') format('woff2'),
+         url('./fonts/BigNoodleTitling.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* @font-face {
+font-family: "BigNoodleTitling";
+src: url("fonts/BiNoodletitling.eot");
+src: url("fonts/BigNoodletitling.eot?#iefix") format("embedded-opentype"), /* EOT file for IE6-8 */
+     url("../fonts/BigNoodleTitling.woff") format("woff"), /* Firefox 3.6+, IE9, Chrome 6+, Safari 5.1+ */
+     url("../fonts/BigNoodletitling.woff2") format("woff2"),  /* Modern browsers  */
+     url("fonts/BigNoodletitling.ttf") format("truetype"),  /* TTF file for CSS3 browsers -- Safari 3-5, Chrome4+, Firefox 3.5, Opera 10+ */
+     /* url("fonts/BigNoodletitling.svg#futura") format("svg"); */
+/* font-weight: 400;
+font-style: normal;
+text-rendering: optimizeLegibility;
+}  */
 
 /* Trajan Pro Bold */
 
-@font-face {
+/* @font-face {
     font-family: 'Trajanus Roman';
     src: url(../fonts/TrajanusRoman.woff) format('woff2'),
         url(../fonts/TrajanusRoman.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 	
 /*  ==========================================================================
@@ -45,13 +68,14 @@
 }
 body{
     background-color: #fff;
-    font-family: 'BigNoodleTitling', sans-serif;
+    font-family: 'BigNoodleTitling', 'Staatliches', cursive;
     font-size: 16px;
     line-height: 26px;
     color: #555;
     font-weight: 400;
     position: relative;
     overflow-x: hidden;
+    font-family: 'Staatliches', cursive !important;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
@@ -592,7 +616,7 @@ ul.nav > li > a.active{
 .hero-content h1{
     margin-bottom: 20px;
     font-size: 4rem;
-    font-family: 'BigNoodleTitling',serif;
+    font-family: 'Staatliches', cursive;
     letter-spacing: 0.8rem;
 }
 .hero-content span{
@@ -1057,7 +1081,7 @@ margin-left: 2rem;
 }
 
 @media (max-width: 800px){
-    #contact-new .contact-new-container {
+#contact-new .contact-new-container {
     flex-direction: column;
 }
 #contact-new .contact-new-container img {
@@ -1066,7 +1090,9 @@ margin-left: 2rem;
 #companies .companies-banner {
 display: none;
 }
-
+body {
+    overflow-x: hidden;
+}
 }
 
 
@@ -1564,6 +1590,6 @@ header .container .navbar #navmenu .nav #port:hover {
 
 @media (max-width:280px){
     .hero-content span{
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     }
 }
