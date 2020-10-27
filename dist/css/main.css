@@ -646,6 +646,8 @@ ul.nav > li > a.active{
 .hero-content .main-hover:hover {
     background: rgba(15, 98, 223, 0.788);
 }
+
+
 /* ==========================================================================
    About Section
    ========================================================================== */
@@ -1590,6 +1592,22 @@ header .container .navbar #navmenu .nav #port:hover {
 
 @media (max-width:280px){
     .hero-content span{
-    font-size: 2.1rem;
+    font-size: 2.4rem;
+    }
+}
+
+
+
+/* Hero Content */
+
+@media (max-width:405px){
+    .hero-content h1 {
+        font-size: 1.25rem;
+    }
+    .hero-content span {
+        font-size: 2.25rem;
+    }
+    #contact-new .contact-new-container ul li {
+        font-size: 1.8rem;
     }
 }
