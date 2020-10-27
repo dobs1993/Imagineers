@@ -998,7 +998,9 @@ color: #fff;
 }
 
 @media (max-width: 400px){
-    .work-filter .LFP:before {
+    .work-filter .LFP:before,
+    .work-filter .m-floor-graphics:before,
+    .work-filter .wayfinding-signage:before {
     top: 70px;
 }
 }
