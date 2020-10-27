@@ -988,16 +988,29 @@ color: #fff;
     cursor: pointer;
 }
 
-@media (max-width: 366px){
-    .work-filter .LFP:before,
-    .work-filter .exterior-signage:before,
-    .work-filter .exterior-signage:before,
-    .work-filter .interior-signage:before,
+/* UNDERLINE BLUE SERVICES */
+
+@media (max-width: 346px){
     .work-filter .m-floor-graphics:before,
     .work-filter .wayfinding-signage:before {
     top: 75px;
 }
 }
+
+@media (max-width: 400px){
+    .work-filter .LFP:before {
+    top: 70px;
+}
+}
+
+@media (max-width: 320px){
+    .work-filter .exterior-signage:before,
+    .work-filter .interior-signage:before {
+        top: 70px;
+    }
+}
+
+
 
 /* ==========================================================================
    CTA - PARTNERSHIPS
