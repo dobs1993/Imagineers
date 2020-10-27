@@ -942,16 +942,14 @@ color: #fff;
     display: inline-block;
     position: relative;
     margin-right: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     font-size: 1.75rem;
     font-weight: 600;
     text-shadow: 2px 2px 1px black;
     letter-spacing: 5px;
-}
-.work-filter .LFP {
-    line-height:1.7rem;
+    line-height: 2rem;
 }
 .work-filter li a{
     display: inline-block;
@@ -991,8 +989,13 @@ color: #fff;
 }
 
 @media (max-width: 366px){
-    .work-filter .LFP:before {
-    top: 53px;
+    .work-filter .LFP:before,
+    .work-filter .exterior-signage:before,
+    .work-filter .exterior-signage:before,
+    .work-filter .interior-signage:before,
+    .work-filter .m-floor-graphics:before,
+    .work-filter .wayfinding-signage:before {
+    top: 60px;
 }
 }
 
